@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Funnel Display", sans-serif;
+  color: white;
+  background-image: radial-gradient(
+      circle,
+      rgba(75, 35, 169, 1),
+      rgba(34, 10, 92, 1),
+      rgba(22, 18, 28, 1)
+    ),
+    url("/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+::selection {
+  background-color: #823e72;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; /* sm */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; /* md */
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; /* lg */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; /* xl */
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px; /* xxl */
+  }
+}
+
+.actionButton {
+  background-color: #862e9c;
+  transition: 0.3s;
+  border-bottom: 3px solid #541464;
+  font-size: 16px;
+  color: #fff;
+  filter: drop-shadow(0 4px 70px #541464);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.actionButton:hover {
+  background-color: #4a2a9f;
+  border-bottom: 3px solid #2d1276;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a.active {
+  color: white;
+}

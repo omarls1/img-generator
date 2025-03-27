@@ -1,0 +1,188 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes textGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.heading {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 4.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.heading strong {
+  font-size: 3.5rem;
+  background: linear-gradient(
+    45deg,
+    #087f5b,
+    #0b7285,
+    #cc5de8,
+    #364fc7,
+    #4b0082
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradient 10s linear infinite;
+}
+
+.description {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  font-weight: 400;
+  font-style: italic;
+  color: #adb5bd;
+}
+
+.searchBar {
+  margin-top: 20px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 24px 30px;
+  color: white;
+  border: 1px solid #4b0082;
+  filter: drop-shadow(0 4px 80px #4b0082);
+  border-radius: 5px;
+  background-color: #212529;
+  font-size: 1rem;
+}
+
+.searchInput::placeholder {
+  color: #adb5bd;
+  font-size: 20px;
+}
+.searchInput:focus {
+  outline: none;
+}
+
+.searchBar label {
+  position: absolute;
+  font-weight: 600;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    208deg,
+    rgba(122, 59, 135, 1),
+    rgba(89, 39, 130, 1),
+    rgba(44, 14, 93, 1)
+  );
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: opacity 0.5s;
+  letter-spacing: 1px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.searchBar label:hover {
+  opacity: 0.9;
+}
+
+.tags {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.popularTags {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ced4da;
+}
+
+.tagsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  background: #5f3dc4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.tag:hover {
+  background-color: #2d1673;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 25px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .heading strong {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+
+  .searchInput {
+    padding: 16px 20px;
+    font-size: 0.9rem;
+  }
+  .searchInput::placeholder {
+    font-size: 16px;
+  }
+  .searchBar label {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .tags {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tagsList {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,15 @@
+.container {
+  padding: 20px;
+}
+.container > div {
+  display: flex;
+  margin: 25px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.container button {
+  margin: auto;
+  display: block;
+}

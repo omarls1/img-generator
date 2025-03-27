@@ -1,0 +1,139 @@
+.imageBox {
+  border: 1px solid #41063f;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 30%;
+  background-color: rgb(15, 1, 26);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(1px 1px 800px rgba(76, 0, 130, 0.714));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.imageBox header {
+  position: relative;
+}
+.imageBox header img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.imageBox header .prompt {
+  position: absolute;
+  opacity: 0;
+}
+.imageBox header .prompt {
+  bottom: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imageBox .likes {
+  font-size: 15px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  cursor: pointer;
+  width: fit-content;
+  align-items: center;
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  color: rgb(218, 202, 202);
+  background-color: rgb(132, 35, 113);
+}
+
+.imageBox .likes svg:hover {
+  fill: rgb(146, 56, 210);
+}
+.liked:hover {
+  fill: indigo;
+}
+.imageBox header:hover .prompt {
+  opacity: 1;
+}
+
+.imageBox header:hover img {
+  filter: blur(1px);
+}
+.title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.prompt {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 12px;
+}
+
+.likes {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: indigo;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+  background-color: rgb(32, 4, 52);
+}
+
+@media (max-width: 768px) {
+  .imageBox {
+    width: 45%;
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .prompt,
+  .likes {
+    font-size: 0.9rem;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageBox {
+    width: 100%; 
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .prompt,
+  .likes {
+    font-size: 0.8rem;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+}

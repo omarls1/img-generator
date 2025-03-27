@@ -1,0 +1,42 @@
+.imageContainer {
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1 1 100%;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover {
+  transform: scale(1.01);
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.greeting {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.changePhoto {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.productiveMessage {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}

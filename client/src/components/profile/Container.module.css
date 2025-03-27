@@ -1,0 +1,15 @@
+.profile {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile > div {
+  padding: 52px;
+  border: 1px inset indigo;
+  border-radius: 12px;
+  background-color: rgba(34, 34, 34, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}

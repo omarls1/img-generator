@@ -1,0 +1,149 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  opacity: 0.9;
+}
+
+.navbarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.navToggle {
+  display: none;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.navLink {
+  color: #d4cfcf;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navLink:hover {
+  color: #dbe4ff;
+}
+
+.loginButton {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid indigo;
+}
+
+.navbarNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  gap: 20px;
+}
+
+.navToggleButton {
+  display: none;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.logoutBtn {
+  background-color: transparent;
+  font-size: 29px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+@media (max-width: 968px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 1rem;
+    width: 100%;
+    opacity: 1;
+  }
+  .navbarHeader {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navToggle {
+    display: block;
+    cursor: pointer;
+  }
+  .navbarNav {
+    display: none;
+    background-color: rgba(37, 4, 60, 0.2);
+    width: 100%;
+    gap: 20px;
+    padding: 1rem;
+    z-index: 1;
+  }
+
+  .navOpen {
+    display: flex;
+    flex-direction: column;
+  }
+  .navList {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navItem {
+    width: 100%;
+  }
+
+  .navLink {
+    display: block;
+    padding: 0.5rem 0;
+  }
+  :global(.actionButton) {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .loginButton {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .navToggleButton {
+    display: block;
+  }
+}

@@ -1,0 +1,20 @@
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eed9ee;
+  color: #4a3e3e;
+}
+.input:focus {
+  outline: none;
+}

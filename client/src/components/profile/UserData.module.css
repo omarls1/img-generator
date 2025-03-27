@@ -1,0 +1,22 @@
+.userDataContainer {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.userDataContainer h2 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.userDataContainer p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.userDataContainer button {
+  width: 100%;
+  margin-left: 0;
+}
