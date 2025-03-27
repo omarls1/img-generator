@@ -48,7 +48,7 @@ This project is built using the **MERN stack**:
      ```
    - **Frontend**:
      ```bash
-     npm start
+     npm run dev
      ```
 2. Open your browser and navigate to `http://localhost:3000`.
 3. Follow the on-screen instructions to generate your custom images.
