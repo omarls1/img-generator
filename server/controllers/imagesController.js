@@ -5,9 +5,9 @@ const CatchAsync = require("../utils/catchAsync");
 const cloudinary = require("cloudinary").v2;
 
 cloudinary.config({
-  cloud_name: "dfim1jhwu",
-  api_key: "658429316155844",
-  api_secret: "EsheKGvwucbPKe6mzAzYSLYhk0E",
+  cloud_name: process.env.CLAUDINARY_NAME,
+  api_key: process.env.CLAUDINARY_API_KEY,
+  api_secret: process.env.CLAUDINARY_API_SECRET,
 });
 
 const sendResponse = (res, statusCode, data) => {
@@ -114,23 +114,3 @@ exports.getImages = catchAsync(async (req, res, next) => {
 
   sendResponse(res, 200, images);
 });
-
-// exports.updateDatabase = CatchAsync(async (req, res, next) => {
-//   const images = await ImagesModel.find({
-//     image: { $regex: "^/", $options: "i" },
-//   });
-
-//   for (const img of images) {
-//     const base64Image = `data:image/png;base64,${img.image}`;
-
-//     const uploadResponse = await cloudinary.uploader.upload(base64Image, {
-//       folder: "ai-generated-images",
-//     });
-
-//     await ImagesModel.findByIdAndUpdate(img._id, {
-//       image: uploadResponse.secure_url,
-//     });
-//   }
-
-//   sendResponse(res, 200, { message: "Database updated successfully" });
-// });
